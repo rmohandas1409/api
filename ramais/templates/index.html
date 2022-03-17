@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome </th>
+            <th scope="col">Descrição </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for indice, dado in dados.items %}
+            <tr>
+              <th scope="row">{{ dado.id }}</th>
+              <td>{{ dado.nome }}</td>
+              <td>{{ dado.descricao }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
